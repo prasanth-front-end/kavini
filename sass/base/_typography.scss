@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet');
+
+
+$ff-ss: 'Roboto', sans-serif;
+$fw-normal: 400;
+$fw-bold: 500;
+$fw-bolder:700;
+$fw-boldest:900;
+$fs-base: 1em;
+
+
+body{
+    color: $textBody;
+    font-family: $ff-ss;
+    font-size: $fs-base;
+    font-weight: $fw-normal;
+    line-height: 1.5;
+}
+h1{
+    @include heading-ss (2rem, 1.2, $fw-bolder);
+}
+h2{
+    @include heading-ss (2rem, 1.2, $fw-bolder);
+}
+h3{
+    @include heading-ss (1.2rem, 1.5, $fw-bolder);
+}
+h4{
+    @include heading-ss (1rem, 1.5, $fw-bolder);
+    letter-spacing: 1;
+    color: $borderGrey;
+}
+h5{
+    @include heading-ss (1.2rem, 1.5, $fw-bolder);
+    margin-bottom: 0;
+}
+.intro-list{
+    h3{
+        @include heading-ss (1.6rem, 1.5, $fw-bolder);
+    }
+}
+blockquote{
+    font-size: 1.2rem;
+    font-style: italic;    
+}
+//Heading style change for viewports
+@media (min-width:1100px){
+    h1{
+        @include heading-ss (2.5rem, 1.2, $fw-bolder);
+    }
+}
+
+

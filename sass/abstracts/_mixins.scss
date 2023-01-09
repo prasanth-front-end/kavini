@@ -1,0 +1,7 @@
+@mixin heading-ss ($f-size, $l-height, $f-weight) {
+    color: $textHeading;
+    font-size: $f-size;
+    font-weight: $f-weight;
+    letter-spacing: 1px;
+    line-height: $l-height;
+}

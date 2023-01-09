@@ -1,0 +1,275 @@
+header {
+    background: linear-gradient(rgba(255, 255, 255, 0.749), rgba(211, 211, 211, 0)), url(../img/analysis.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+}
+
+.banner {
+    padding: 3em 2em;
+    text-align: center;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    h1 {
+        margin: 0 0 0.2em 0;
+    }
+}
+
+.banner-description,
+{
+margin: 0 0 2em 0;
+}
+
+.banner-top-text {
+    margin: 0 0 0.2em 0;
+    order: -1;
+    text-transform: uppercase;
+}
+
+//About Section
+.about {
+    margin: auto;
+    width: 90%;
+    padding: 3em;
+    text-align: center;
+}
+
+//Main Section Styles
+.main-section {
+    background-color: $bodyBackground;
+    padding: 3em 1em;
+    text-align: center;
+
+    h2 {
+        margin: 0;
+    }
+
+    p {
+        margin-bottom: 3em;
+    }
+}
+
+.features-item {
+    background-color: white;
+    border-bottom: $primaryBlue 2px solid;
+    padding: 3.5em 2em 2em;
+}
+
+//CTA Simple Section
+.cta-simple {
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+    border-color: $borderGrey;
+    padding: 2em;
+    text-align: center;
+}
+
+//Intro Section
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 2em;
+    text-align: center;
+
+    h2 {
+        margin: 0;
+    }
+
+    p {
+        order: -1;
+        text-transform: uppercase;
+        margin: 0 0 1em 0;
+        color: $secondaryBlue;
+    }
+}
+
+.intro-list {
+    padding: 1em 0;
+}
+
+.intro-details {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.wrapper-list {
+    display: flex;
+    align-items: flex-start;
+}
+
+.wrapper-list-item-1 {
+    padding: 1em;
+}
+
+.wrapper-list-item-2 {
+    padding: 1em;
+
+    h4 {
+        margin: 0 0 0.5em 0;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    ::after {
+        content: '';
+        display: block;
+        background-color: $borderGrey;
+        height: 1px;
+        margin-top: 1em;
+        width: 100%;
+    }
+}
+
+//Join Us Section
+.wrapper {
+    background-color: $wrapperBackground;
+    color: $borderGrey;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .wrapper-list-item-2 {
+        ::after {
+            display: none;
+        }
+    }
+}
+
+.wrapper-item-1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/web-design-process.jpg);
+    background-size: cover;
+}
+
+.wrapper-item-2 {
+    width: 100%;
+    padding: 2em;
+    height: 100%;
+}
+
+.wrapper-head {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0.5em;
+
+    h2 {
+        color: $borderGrey;
+        margin: 0;
+    }
+
+    p {
+        order: -1;
+        text-transform: uppercase;
+    }
+}
+
+.contact-form-wrapper {
+    h2 {
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    padding: 3em;
+
+}
+
+//Media Queries
+@media (min-width:800px) {
+    .about {
+        width: 60%;
+    }
+
+    .features-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .features-item {
+        margin: 0 0.5em;
+    }
+
+    .intro-details {
+        flex-direction: row;
+        align-items: center;
+        padding: 0 2em;
+
+        h3 {
+            margin: 0 0 1em 0;
+        }
+    }
+
+    .intro-image {
+        width: 50%;
+        padding: 1em;
+    }
+
+    .intro-list {
+        padding: 0 2em;
+        width: 50%;
+    }
+
+    .wrapper-list {}
+
+    .wrapper-list-item-1 {
+        padding: 1em 0;
+    }
+
+    .wrapper-list-item-2 {
+        padding: 1em;
+        width: 70%;
+    }
+
+    .wrapper {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .wrapper-head {
+        text-align: left;
+        margin-bottom: 1em;
+    }
+
+    .wrapper-item-1 {
+        padding: 0;
+        width: 50%;
+    }
+
+    .wrapper-item-2 {
+        width: 50%;
+    }
+
+}
+
+@media (min-width:1100px) {
+    .banner {
+        padding: 4em 2em;
+    }
+
+    .about {
+        width: 50%;
+    }
+
+    .features-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .intro-image {
+        padding: 3em;
+    }
+
+    .wrapper-item-2 {
+        padding: 3em;
+    }
+}

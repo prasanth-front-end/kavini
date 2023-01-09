@@ -1,0 +1,17 @@
+.testimonials{
+    background-color: $bodyBackground;
+    margin: auto;
+    padding: 3em;
+
+    text-align: center;
+}
+blockquote{
+    width: 60%;
+    margin: auto;
+}
+blockquote::before{
+    content: '\201d';
+    color: $secondaryBlue;
+    font-size: 5rem;
+    display: block;
+}

@@ -1,0 +1,44 @@
+
+
+
+.input-group{
+    width: 100%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    input, textarea{
+        border: none;
+        color: $primaryBlue;
+        font-family: inherit;
+        padding: 0.4em 0.5em;
+        margin-bottom: 0.5em;    
+        border-bottom: 1px solid $primaryBlue;
+        outline: none;
+    }
+    label{
+        color: $textBody;
+        position: absolute;
+        top: 0;
+        transition: 0.7s ease-in-out;
+    }
+    input:focus ~ label, textarea:focus ~ label{
+        color: $primaryBlue;
+        position: absolute;
+        top: -2em;
+        font-size: 0.8em;
+    }
+}
+.submit-section{
+    text-align: center;
+}
+@media (min-width:800px){
+    .input-group{
+        width: 60%;
+    }
+}
+@media (min-width:1100px){
+    .input-group{
+        width: 40%;
+    }
+}
