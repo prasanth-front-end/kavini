@@ -701,7 +701,7 @@ header {
 .banner-text {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -717,6 +717,8 @@ header {
 
 .banner-description {
   margin: 0 0 2em 0;
+  font-size: 1.5rem;
+  text-transform: none;
 }
 
 .banner-top-text {
@@ -724,7 +726,7 @@ header {
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
-  text-transform: uppercase;
+
 }
 
 .about {

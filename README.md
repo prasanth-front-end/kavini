@@ -1,2 +1,2 @@
-# Kavini
- Kavini Website Development
+# Tech-Scholars
+ Tech Scholars Website Development
